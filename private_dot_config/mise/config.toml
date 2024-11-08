@@ -1,0 +1,7 @@
+[tools]
+node = "lts"
+usage = "latest"
+github-cli = "latest"
+neovim = "latest"
+php = "8.3.13"
+chezmoi = "latest"
