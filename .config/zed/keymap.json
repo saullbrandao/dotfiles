@@ -8,7 +8,8 @@
 [
   {
     "bindings": {
-      "ctrl-b": "workspace::ToggleLeftDock"
+      "ctrl-b": "workspace::ToggleLeftDock",
+      "ctrl-h": "project_panel::ToggleFocus"
     }
   },
   {
@@ -28,6 +29,19 @@
     }
   },
   {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "; ;": ["workspace::SendKeystrokes", "escape shift-a ; escape"],
+      ", ,": ["workspace::SendKeystrokes", "escape shift-a , escape"]
+    }
+  },
+  {
+    "context": "Editor && (showing_code_actions || showing_completions)",
+    "bindings": {
+      "tab": "editor::ContextMenuNext"
+    }
+  },
+  {
     "context": "Workspace",
     "bindings": {
       "ctrl-`": "workspace::ToggleBottomDock"
@@ -42,17 +56,8 @@
       "d": "project_panel::Delete",
       "x": "project_panel::Cut",
       "y": "project_panel::Copy",
-      "p": "project_panel::Paste"
-    }
-  },
-  // Navigate between camelCase and snake_case word
-  {
-    "context": "VimControl && !menu && vim_mode != operator",
-    "bindings": {
-      "w": "vim::NextSubwordStart",
-      "b": "vim::PreviousSubwordStart",
-      "e": "vim::NextSubwordEnd",
-      "g e": "vim::PreviousSubwordEnd"
+      "p": "project_panel::Paste",
+      "q": "workspace::ToggleLeftDock"
     }
   }
 ]

@@ -14,35 +14,50 @@
     },
     "version": "2"
   },
+  "auto_install_extensions": {
+    "blade": true,
+    "emmet": true,
+    "env": true,
+    "html": true,
+    "php": true,
+    "tokyo-night": true,
+    "vue": true
+  },
+  "base_keymap": "VSCode",
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_size": 13,
+  "file_types": {
+    "Blade": ["*.blade.php"]
+  },
+  "languages": {
+    "PHP": {
+      "formatter": "language_server",
+      "language_servers": ["intelephense", "!phpactor", "..."]
+    }
+  },
+  "soft_wrap": "editor_width",
+  "tabs": {
+    "file_icons": true,
+    "git_status": true
+  },
   "telemetry": {
     "metrics": false
   },
-  "tabs": {
-    "file_icons": true
+  "terminal": {
+    "shell": {
+      "program": "fish"
+    }
   },
-  "auto_install_extensions": {
-    "html": true,
-    "php": true,
-    "vue": true,
-    "tokyo-night": true,
-    "env": true
-  },
-  "base_keymap": "VSCode",
-  "vim_mode": true,
-  "ui_font_size": 16,
-  "buffer_font_family": "JetBrainsMono Nerd Font",
-  "buffer_font_size": 13,
   "theme": {
-    "mode": "system",
+    "mode": "dark",
     "light": "One Light",
     "dark": "Tokyo Night"
   },
-  "soft_wrap": "editor_width",
-  "relative_line_numbers": true,
-  "wrap_guides": [80, 120],
-  "languages": {
-    "PHP": {
-      "language_servers": ["intelephense", "!phpactor", "..."]
-    }
-  }
+  "ui_font_size": 16,
+  "vim": {
+    "use_system_clipboard": "never",
+    "toggle_relative_line_numbers": true
+  },
+  "vim_mode": true,
+  "wrap_guides": [80, 120]
 }
