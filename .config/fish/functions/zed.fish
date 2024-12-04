@@ -1,4 +1,3 @@
 function zed --wraps=zedit --description 'alias zed zedit'
-  zedit $argv
-        
+    zedit $argv
 end
