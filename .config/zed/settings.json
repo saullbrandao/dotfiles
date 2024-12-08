@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "features": {
+    "inline_completion_provider": "none"
+  },
   "assistant": {
     "default_model": {
       "provider": "zed.dev",
@@ -26,15 +29,30 @@
   "base_keymap": "VSCode",
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_size": 13,
+  "chat_panel": { "button": false },
+  "collaboration_panel": { "button": false },
   "file_types": {
     "Blade": ["*.blade.php"]
   },
   "languages": {
+    "JavaScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
     "PHP": {
       "formatter": "language_server",
       "language_servers": ["intelephense", "!phpactor", "..."]
+    },
+    "Vue.js": {
+      "formatter": {
+        "code_actions": {
+          "source.fixAll.eslint": true
+        }
+      }
     }
   },
+  "outline_panel": { "button": false },
   "soft_wrap": "editor_width",
   "tabs": {
     "file_icons": true,
@@ -44,6 +62,8 @@
     "metrics": false
   },
   "terminal": {
+    "button": false,
+    "font_family": "JetBrainsMono Nerd Font",
     "shell": {
       "program": "fish"
     }

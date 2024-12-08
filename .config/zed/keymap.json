@@ -44,7 +44,8 @@
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-`": "workspace::ToggleBottomDock"
+      "ctrl-`": "workspace::ToggleBottomDock",
+      "ctrl-shift-b": null
     }
   },
   // Project Panel keymaps
@@ -58,6 +59,13 @@
       "y": "project_panel::Copy",
       "p": "project_panel::Paste",
       "q": "workspace::ToggleLeftDock"
+    }
+  },
+
+  {
+    "context": "!Terminal",
+    "bindings": {
+      "ctrl-shift-c": null
     }
   }
 ]
