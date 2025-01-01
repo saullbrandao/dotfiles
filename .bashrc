@@ -1,5 +1,3 @@
-source /usr/share/defaults/etc/profile
-
 # Mise
 eval "$(~/.local/bin/mise activate bash)"
 

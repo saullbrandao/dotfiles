@@ -1,4 +1,6 @@
 [tools]
+github-cli = "latest"
+neovim = "latest"
 node = "lts"
 php = "8.4.1"
 usage = "latest"
