@@ -59,6 +59,7 @@
     "git_status": true
   },
   "telemetry": {
+    "diagnostics": false,
     "metrics": false
   },
   "terminal": {
@@ -71,7 +72,7 @@
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "Tokyo Night"
+    "dark": "One Dark"
   },
   "ui_font_size": 16,
   "vim": {
